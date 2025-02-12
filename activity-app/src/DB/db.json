@@ -1,81 +1,63 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "nome": "Ana",
-      "descricao": "ana@gmail.com",
-      "estado": "concluida"
-    },
-    {
-      "id": "2",
-      "nome": "Maria",
-      "descricao": "maria@gmail.com",
-      "estado": "(47)7050-7060"
-    },
-    {
-      "id": "6622",
-      "nome": "Pedro",
-      "descricao": "pedro@gmail.com",
-      "estado": "(47)7080-0987"
-    },
-    {
-      "id": "c39b",
-      "nome": "Pedro",
-      "descricao": "pedro@gmail.com",
-      "estado": "(47)7080-0987"
-    },
-    {
-      "id": "c5c1",
-      "nome": "Pedro",
-      "descricao": "pedro@gmail.com",
-      "estado": "(47)7080-0987"
-    },
-    {
-      "id": "4dd9",
-      "nome": "Pedro",
-      "descricao": "pedro@gmail.com",
-      "estado": "(47)7080-0987"
-    },
-    {
-      "id": "ccc0",
-      "nome": "Pedro",
-      "descricao": "pedro@gmail.com",
-      "estado": "(47)7080-0987"
-    },
-    {
-      "id": "e6bb",
-      "nome": "Pedro",
-      "descricao": "pedro@gmail.com",
-      "estado": "(47)7080-0987"
-    },
-    {
-      "id": "6b0e",
-      "nome": "Antonio",
-      "descricao": "antonio@gmai   ",
-      "estado": "ss"
-    },
-    {
-      "id": "9476",
-      "nome": "Java avançado e POO",
-      "descricao": "brunamoro68@gmail.com",
-      "estado": "(47)997069182"
-    },
-    {
-      "id": "af63",
-      "nome": "123",
-      "descricao": "adsasd",
-      "estado": "12312   "
-    },
-    {
-      "id": "cb79",
-      "nome": "fazer React",
-      "descricao": "terminar atividade do vilson",
+      "id": "1812",
+      "nome": "comprar leite",
+      "descricao": "ir ao mercado comprar leite e pão",
       "estado": "pendente"
     },
     {
-      "id": "9426",
-      "nome": "terminar curso angular",
-      "descricao": "",
+      "id": "1813",
+      "nome": "estudar matemática",
+      "descricao": "estudar álgebra e geometria por 2 horas",
+      "estado": "concluida"
+    },
+    {
+      "id": "1814",
+      "nome": "ligar para o médico",
+      "descricao": "agendar consulta de rotina",
+      "estado": "pendente"
+    },
+    {
+      "id": "1815",
+      "nome": "fazer compras para o jantar",
+      "descricao": "comprar ingredientes para preparar o jantar de amanhã",
+      "estado": "pendente"
+    },
+    {
+      "id": "1816",
+      "nome": "organizar documentos",
+      "descricao": "organizar os documentos pessoais na gaveta",
+      "estado": "concluida"
+    },
+    {
+      "id": "1817",
+      "nome": "limpar a casa",
+      "descricao": "realizar limpeza geral na casa",
+      "estado": "pendente"
+    },
+    {
+      "id": "1818",
+      "nome": "fazer exercício",
+      "descricao": "fazer 30 minutos de caminhada",
+      "estado": "pendente"
+    },
+    {
+      "id": "1819",
+      "nome": "preparar café",
+      "descricao": "fazer café para o café da manhã",
+      "estado": "concluida"
+    },
+    {
+      "id": "1820",
+      "nome": "leitura do livro",
+      "descricao": "ler 2 capítulos do livro que estou lendo",
+      "estado": "pendente"
+    },
+    {
+      "id": "ca7c",
+      "nome": "Comprar pão",
+      "descricao": "Ir comprar pão para a vó",
       "estado": "pendente"
     }
   ]

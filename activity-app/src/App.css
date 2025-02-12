@@ -32,12 +32,29 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
+.taskBox {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.486);
+  text-align: justify;
+  color: black;
+  margin-bottom: 10px;
+}
 
-Header{
-  background-color: red;
+.boxMenu {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.486);
+  color: black;
+  margin-bottom: 10px;
+  height: 12vh;
+}
+
+
+.texto-branco {
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
