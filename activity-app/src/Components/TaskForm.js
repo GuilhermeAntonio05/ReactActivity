@@ -17,7 +17,7 @@ function TaskForm() {
     }
 
     function AddContato() {
-        fetch("http://localhost:3000/contatos", {
+        fetch("http://localhost:3000/tasks", {
             method: "POST",
             headers: { 'ContentType': 'application/json' },
             body: JSON.stringify(contato)

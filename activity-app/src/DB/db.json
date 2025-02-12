@@ -1,10 +1,10 @@
 {
-  "contatos": [
+  "tasks": [
     {
       "id": "1",
       "nome": "Ana",
       "descricao": "ana@gmail.com",
-      "estado": "(47)7070-7070"
+      "estado": "concluida"
     },
     {
       "id": "2",
@@ -51,13 +51,7 @@
     {
       "id": "6b0e",
       "nome": "Antonio",
-      "descricao": "antonio@gmail.com",
-      "estado": "(47)7080-0987"
-    },
-    {
-      "id": "fcbb",
-      "nome": "scdqwd",
-      "descricao": "dswq",
+      "descricao": "antonio@gmai   ",
       "estado": "ss"
     },
     {
@@ -70,7 +64,19 @@
       "id": "af63",
       "nome": "123",
       "descricao": "adsasd",
-      "estado": "123123123"
+      "estado": "12312   "
+    },
+    {
+      "id": "cb79",
+      "nome": "fazer React",
+      "descricao": "terminar atividade do vilson",
+      "estado": "pendente"
+    },
+    {
+      "id": "9426",
+      "nome": "terminar curso angular",
+      "descricao": "",
+      "estado": "pendente"
     }
   ]
 }

@@ -7,18 +7,20 @@ function RemoveItem(){
     const navigate = useNavigate();
 
     useEffect(()=>{
-        fetch(`http://localhost:3000/contatos/${id}`)  
+        fetch(`http://localhost:3000/tasks/${id}`)  
         .then(resp => resp.json())
         .then(data => setContato(data))
     },[id])
 
     function remove(){
-        fetch(`http://localhost:3000/contatos/${id}`, {
+        fetch(`http://localhost:3000/tasks/${id}`, {
             method: 'DELETE',
             headers:{'ContentType':'application/json'},
             body:JSON.stringify(contato)
         })
     }
+
+    
 
     return(
         remove(),
