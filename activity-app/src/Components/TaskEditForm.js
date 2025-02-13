@@ -6,6 +6,7 @@ function TaskEditForm() {
 
     const [task, setTask] = useState({ id: 0, nome: '', descricao: '', estado: '' })
     const { id } = useParams();
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         fetch(`http://localhost:3000/tasks/${id}`)
@@ -22,11 +23,15 @@ function TaskEditForm() {
     }
 
     function alterartask() {
-        fetch(`http://localhost:3000/tasks/${id}`, {
-            method: "PUT",
-            headers: { 'ContentType': 'application/json' },
-            body: JSON.stringify(task)
-        })
+        if ((task.nome !== "") || (task.estado !== "")) {
+            fetch(`http://localhost:3000/tasks/${id}`, {
+                method: "PUT",
+                headers: { 'ContentType': 'application/json' },
+                body: JSON.stringify(task)
+            })
+        }else{
+            setError(true)
+        }
     }
 
     return (
@@ -54,11 +59,10 @@ function TaskEditForm() {
                     value={task.estado}
                     onChange={handleChange}
                 >
-                    <option value="">Selecione o estado</option>
                     <option value="pendente">Pendente</option>
                     <option value="concluida">Concluída</option>
                 </select>
-
+                {error && <p className="text-danger">Por favor, preencha o(s) campo(s) antes de salvar.</p>}
                 <button
                     className="btn btn-outline-primary"
                     onClick={alterartask}

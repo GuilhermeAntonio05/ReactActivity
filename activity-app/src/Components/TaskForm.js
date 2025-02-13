@@ -6,21 +6,26 @@ function TaskForm() {
     const [nome, setNome] = useState('');
     const [descricao, setDescricao] = useState('');
     const [estado, setEstado] = useState('');
+    const [error, setError] = useState(false);
 
     const task = { nome, descricao, estado };
-     const navigate = useNavigate();
+    const navigate = useNavigate();
 
     function cancelar() {
         navigate("../lista/todo")
     }
 
     function addtask() {
-        fetch("http://localhost:3000/tasks", {
-            method: "POST",
-            headers: { 'ContentType': 'application/json' },
-            body: JSON.stringify(task)
-        })
-        navigate("../lista/todo")
+        if ((task.nome !== "") || (task.estado !== "")) {
+            fetch("http://localhost:3000/tasks", {
+                method: "POST",
+                headers: { 'ContentType': 'application/json' },
+                body: JSON.stringify(task)
+            })
+            navigate("../lista/todo")
+        }else {
+            setError(true)
+        }
     }
 
     return (
@@ -40,7 +45,7 @@ function TaskForm() {
                     placeholder="Informe descricao"
                     value={descricao}
                     onChange={(e) => setDescricao(e.target.value)}
-                />
+                    />
 
                 <label>Informe Estado</label>
                 <select className="form-control mb-2"
@@ -48,14 +53,14 @@ function TaskForm() {
                     placeholder="Informe estado"
                     value={estado}
                     onChange={(e) => setEstado(e.target.value)}
-                >
-                    <option value="">Selecione o estado</option>
+                    >
                     <option value="pendente">Pendente</option>
                     <option value="concluida">Concluída</option>
                 </select>
+                {error && <p className="text-danger">Por favor, preencha o(s) campo(s) antes de salvar.</p>}
 
                 <button
-                    className="btn btn-outline-primary"
+                    className="btn btn-outline-primary" type="button"
                     onClick={addtask}
                 >
                     Gravar

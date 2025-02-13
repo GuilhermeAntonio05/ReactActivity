@@ -4,7 +4,7 @@
       "id": "1812",
       "nome": "comprar leite",
       "descricao": "ir ao mercado comprar leite e pão",
-      "estado": "pendente"
+      "estado": "concluida"
     },
     {
       "id": "1813",
@@ -16,7 +16,7 @@
       "id": "1814",
       "nome": "ligar para o médico",
       "descricao": "agendar consulta de rotina",
-      "estado": "pendente"
+      "estado": ""
     },
     {
       "id": "1815",
@@ -58,6 +58,18 @@
       "id": "ca7c",
       "nome": "Comprar pão",
       "descricao": "Ir comprar pão para a vó",
+      "estado": "pendente"
+    },
+    {
+      "id": "e965",
+      "nome": "andre",
+      "descricao": "fazer front",
+      "estado": "pendente"
+    },
+    {
+      "id": "30ff",
+      "nome": "andere",
+      "descricao": "andre",
       "estado": "pendente"
     }
   ]
